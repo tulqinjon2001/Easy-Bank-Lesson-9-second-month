@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+  .header__inner {
+    background-image: url("../../img/gamburger.png");
+    background-size: 24px 11px;
+    background-position: right 5px;
+    background-repeat: no-repeat;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__invite-button {
+    display: none;
+  }
+}
